@@ -1,0 +1,60 @@
+{% block sw_product_detail_attribute_sets %}
+    {% parent() %}
+    <sw-card :title="$t('sw-product.detail.OneToOneExtensionInheritanceDemoCardLabel')"
+            :isLoading="isLoading">
+
+        <sw-container 
+            v-if="!isLoading && parentProduct && product"
+            columns="1fr"
+            rows="2"
+            gap="0px 30px">
+
+            <sw-container 
+                v-if="!isLoading && parentProduct && product"
+                columns="1fr 1fr"
+                gap="0px 30px">
+
+                <div>
+                    <h2>--- PRODUCT ---</h2>
+                    <div>{{ product.extensions }}</div>
+                    <h2>---</h2>
+                </div>
+    
+                
+                <div>
+                    <h2>--- PARENT PRODUCT ---</h2>
+                    <div>{{ parentProduct.extensions }}</div>
+                    <h2>---</h2>
+                </div>
+
+            </sw-container>
+            
+            {# 
+            # It doesn't matter whether I put 
+            # 'v-model=product.extesions.oneToOneExtensionInheritanceDemo' and ':inherited-value=parentProduct.extesions.oneToOneExtensionInheritanceDemo'
+            # or 'v-model=product.extesions.oneToOneExtensionInheritanceDemo' and ':inherited-value=parentProduct.extesions.oneToOneExtensionInheritanceDemo' respectively. 
+            #}
+            <sw-inherit-wrapper
+                v-model="OneToOneExtensionInheritanceDemoExtension"
+                :has-parent="!!parentProduct.id"
+                :inherited-value="parentOneToOneExtensionInheritanceDemoExtension"
+            >
+                <template #content="props">
+
+                    <sw-datepicker
+                    :map-inheritance="props"
+                    date-type="datetime"
+                    :label="$t('sw-product.detail.OneToOneExtensionInheritanceDemoLabel')"
+                    :disabled="props.isInherited"
+                    :value="props.currentValue"
+                    @input="props.updateCurrentValue"
+                    >
+                    </sw-datepicker>
+
+                </template>
+            </sw-inherit-wrapper>
+
+        </sw-container>
+
+    </sw-card>
+{% endblock %}

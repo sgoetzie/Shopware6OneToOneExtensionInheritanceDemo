@@ -1,0 +1,8 @@
+{
+    "sw-product": {
+        "detail": {
+            "OneToOneExtensionInheritanceDemoCardLabel": "OneToOneExtensionInheritance",
+            "OneToOneExtensionInheritanceDemoLabel": "My date"
+        }
+    }
+}

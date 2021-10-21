@@ -1,0 +1,31 @@
+{
+    "name": "demo/one-to-one-extension-inheritance-demo",
+    "description": "Supposed to demonstrate the problem with extension inheritance of variant products using OneToOneAssociation",
+    "version": "1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ""
+        }
+    ],
+    "require": {
+        "shopware/core": "6.4.*"
+    },
+    "extra": {
+        "shopware-plugin-class": "OneToOneExtensionInheritanceDemo\\OneToOneExtensionInheritanceDemo",
+        "label": {
+            "de-DE": "Der angezeigte lesbare Name für das Plugin",
+            "en-GB": "The displayed readable name for the plugin"
+        },
+        "description": {
+            "de-DE": "Beschreibung in der Administration für das Plugin",
+            "en-GB": "Description in the administration for this plugin"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "OneToOneExtensionInheritanceDemo\\": "src/"
+        }
+    }
+}
