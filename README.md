@@ -11,10 +11,10 @@ This repository is supposed to reproduce the missing extensions for variant prod
 - The variant product of a parent product does NOT inherit the extension from the parent. It will always be null.
 ![This is the extensions part of dump(product) of a variant product in the storefront](https://imgur.com/3TDdi1l)
 
-### ```{{ product.extensions }} and {{ parentProduct.extensions }} for our (parent) product in our extra admin card.
+### ```{{ product.extensions }}``` and ```{{ parentProduct.extensions }}``` for our (parent) product in our extra admin card.
 ![This is the extensions part of {{ product.extensions }} and {{ parentProduct.extensions }} of a product in the admin](https://imgur.com/3TDdi1l)
 
-### ```{{ product.extensions }} and {{ parentProduct.extensions }} for our variant product in our extra admin card.
+### ```{{ product.extensions }}``` and ```{{ parentProduct.extensions }}``` for our variant product in our extra admin card.
 ![This is the extensions part of {{ product.extensions }} and {{ parentProduct.extensions }} of a variant product in the admin](https://imgur.com/3TDdi1l)
     
 - Lifting the inheritance and then adding/editing/saving an extension in the admin manually works and the variant gets its own entry in the database.
