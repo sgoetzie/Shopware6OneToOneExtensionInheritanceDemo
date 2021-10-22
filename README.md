@@ -6,7 +6,7 @@ This repository is supposed to reproduce the missing extensions for variant prod
 ### ```{{ dump(product) }}``` of a (parent) product in any storefront template
 - Adding, editing and saving extensions for a (parent) product works without a problem.
 
-![This is the extensions part of dump(product) of a (parent) product in the storefront](https://i.imgur.com/lg8lKcI.png | width=250)
+![This is the extensions part of dump(product) of a (parent) product in the storefront](https://i.imgur.com/lg8lKcI.png)
 
 ### ```{{ dump(product) }}``` of a variant product in any storefront template
 - The variant product of a parent product does NOT inherit the extension from the parent. It will always be null.
