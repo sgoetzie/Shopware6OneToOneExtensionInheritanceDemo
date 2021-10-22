@@ -1,3 +1,6 @@
+# Link to the issue on shopware/platform
+### [Issue#2150](https://github.com/shopware/platform/issues/2150)
+
 # Shopware6OneToOneExtensionInheritanceDemo
 This repository is supposed to reproduce the missing extensions for variant products using the OneToOneAssociation.
 
