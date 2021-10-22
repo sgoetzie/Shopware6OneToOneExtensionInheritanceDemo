@@ -34,25 +34,25 @@ This repository is supposed to reproduce the missing extensions for variant prod
 
 ### Shopware Forum
 
-https://forum.shopware.com/t/keine-inheritance-mit-einer-onetoone-entityextension-des-produkts-moeglich/90215
-https://forum.shopware.com/t/produkt-um-vererbbares-boolean-feld-erweitern/89149
-https://forum.shopware.com/t/vererbung-einer-custom-assoziation/64871
+- https://forum.shopware.com/t/keine-inheritance-mit-einer-onetoone-entityextension-des-produkts-moeglich/90215
+- https://forum.shopware.com/t/produkt-um-vererbbares-boolean-feld-erweitern/89149
+- https://forum.shopware.com/t/vererbung-einer-custom-assoziation/64871
 
 ## English posts
 
 ### Shopware Forum
 
-https://forum.shopware.com/t/inheritable-boolean-field-for-product-entity/89200
+- https://forum.shopware.com/t/inheritable-boolean-field-for-product-entity/89200
 
 ### GitHub
 
-https://github.com/shopware/platform/issues/2015#issuecomment-907696840
+- https://github.com/shopware/platform/issues/2015#issuecomment-907696840
 
 ### Stackoverflow
 
-https://stackoverflow.com/questions/67820918/shopware-6-create-inherited-entity-extension-for-products
-https://stackoverflow.com/questions/64373238/how-to-use-inherited-flag-in-shopware-6-for-onetooneassociationfield
+- https://stackoverflow.com/questions/67820918/shopware-6-create-inherited-entity-extension-for-products
+- https://stackoverflow.com/questions/64373238/how-to-use-inherited-flag-in-shopware-6-for-onetooneassociationfield
 
 ### Slack
 
-https://app.slack.com/client/T011TTK0DMK/C011VFQT7GB/thread/C011VFQT7GB-1634805683.017100
+- https://app.slack.com/client/T011TTK0DMK/C011VFQT7GB/thread/C011VFQT7GB-1634805683.017100
