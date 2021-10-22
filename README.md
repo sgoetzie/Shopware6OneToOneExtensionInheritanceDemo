@@ -12,11 +12,13 @@ This repository is supposed to reproduce the missing extensions for variant prod
 ![This is the extensions part of dump(product) of a variant product in the storefront](https://i.imgur.com/3TDdi1l.png)
 
 ### ```{{ product.extensions }}``` and ```{{ parentProduct.extensions }}``` for our (parent) product in our extra admin card.
+- The (parent) products values are saved correctly and accessible.
 ![This is the extensions part of {{ product.extensions }} and {{ parentProduct.extensions }} of a product in the admin](https://i.imgur.com/cAe5lbr.png)
 
 ### ```{{ product.extensions }}``` and ```{{ parentProduct.extensions }}``` for our variant product in our extra admin card.
+- The variant product seems to know about his parent and its values.
 ![This is the extensions part of {{ product.extensions }} and {{ parentProduct.extensions }} of a variant product in the admin](https://i.imgur.com/ZjH3W8r.png)
     
-- Lifting the inheritance and then adding/editing/saving an extension in the admin manually works and the variant gets its own entry in the database.
+- Lifting the inheritance and then adding/editing/saving an extension in the admin manually works and the variant gets its own entry in the database. The seperate entry for this variant will become accessible in the storefront and potential filters can use this value.
 
-- Restoring the inheritance of a variant in admin does not restore the parents values and does not remove the corresponding entry in the database.
+- Restoring the inheritance of a variant in admin does not restore the parents values and does not remove the corresponding entry in the database. The variant will now have an entry in the database with it's value set to null. The extension remains accessible and will be used by potential filters.
